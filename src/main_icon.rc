@@ -1,0 +1,104 @@
+IDI_ICON1               ICON    DISCARDABLE     "icon.ico"
+
+#include <windows.h>
+#include "appinfo.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+// Version info
+/////////////////////////////////////////////////////////////////////////////
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     VER_FILEVERSION
+PRODUCTVERSION  VER_PRODUCTVERSION
+FILEOS          VOS_NT_WINDOWS32
+FILETYPE        VFT_APP
+
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+#ifdef UNICODE
+    BLOCK "040904B0"
+#else
+    BLOCK "040904E4"
+#endif
+    BEGIN
+		VALUE "FileDescription",    "LoRa Pack Converter"
+		VALUE "FileVersion",        VER_FILEVERSION_STR
+		VALUE "InternalName",       "Internet of Things"
+		VALUE "LegalCopyright",     "2018-2019, Internet of Things ©"
+		VALUE "OriginalFilename",   "LoRaPackConverter.exe"
+		VALUE "ProductName",        "A utility to transfer large packets to a device over the LoRa network."
+		VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
+		VALUE "Comments",           "LoRa Pack Converter"
+		VALUE "CompanyName",        "Internet of Things"
+		VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+#ifdef UNICODE
+    VALUE "Translation", 0x0419, 0x04B0, 0x0409, 0x04B0
+#else
+    VALUE "Translation", 0x0419, 0x04E3, 0x0409, 0x04E4
+#endif
+  END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+// Информация о версии
+/////////////////////////////////////////////////////////////////////////////
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     VER_FILEVERSION
+PRODUCTVERSION  VER_PRODUCTVERSION
+FILEOS          VOS_NT_WINDOWS32
+FILETYPE        VFT_APP
+
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+#ifdef UNICODE
+    BLOCK "041904B0"
+#else
+    BLOCK "041904E3"
+#endif
+    BEGIN
+		VALUE "FileDescription",    "Утилита для передачи больших пакетов на устройство по сети LoRa."
+		VALUE "FileVersion",        VER_FILEVERSION_STR
+		VALUE "InternalName",       "Интернет Вещей"
+		VALUE "LegalCopyright",     "2018-2019, Интернет Вещей ©"
+		VALUE "OriginalFilename",   "LoRaPackConverter.exe"
+		VALUE "ProductName",        "Утилита для передачи больших пакетов на устройство по сети LoRa."
+		VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
+		VALUE "Comments",           "Утилита для передачи больших пакетов на устройство по сети LoRa."
+		VALUE "CompanyName",        "Интернет Вещей"
+		VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+#ifdef UNICODE
+    VALUE "Translation", 0x0419, 0x04B0, 0x0409, 0x04B0
+#else
+    VALUE "Translation", 0x0419, 0x04E3, 0x0409, 0x04E4
+#endif
+  END
+END
